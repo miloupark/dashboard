@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
 import About from "./pages/About";
 import GlobalStyles from "./styles/GlobalStyles.styles";
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
