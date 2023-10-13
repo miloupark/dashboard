@@ -6,10 +6,11 @@ import Home from "./pages";
 import About from "./pages/About";
 import GlobalStyles from "./styles/GlobalStyles.styles";
 import './App.scss';
+import { ChakraProvider, CSSReset, theme } from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
+    <ChakraProvider theme={theme} >
       <Reset />
       <GlobalStyles/>
       <Layout>
@@ -18,7 +19,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
         </Routes>
       </Layout>
-    </>
+    </ChakraProvider>
    );
 };
 

@@ -19,9 +19,10 @@ const Gnb = () => {
 
 const GnbWrapper = styled.nav`
   ul {
-    display: flex;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
     li {
-      margin-left: 10px;
       a {
         color: #333;
         &:hover {
