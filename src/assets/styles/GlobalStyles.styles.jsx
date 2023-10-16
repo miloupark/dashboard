@@ -53,12 +53,13 @@ const GlobalStyles = createGlobalStyle`
     }
    
     /* 작업 시 뒤에 이미지 깔아두고 작업 */
-    // body {
-    //     background: url(images/1.png) no-repeat 100% 0 !important;
-    //     #root {
-    //         opacity: 0.5 !important;
-    //     }
-    // }
+    body {
+        background: url(2.jpg) no-repeat 0 0 !important;
+        background-size: 100%;
+        #root {
+            opacity: 0.5 !important;
+        }
+    }
     
     *{
         box-sizing: border-box;
@@ -69,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
     /* 기본 폰트 설정 */
     body, html {
         line-height: 1.5;
-        font-family: 'Spoqa Han Sans Neo', "Malgun Gothic", "맑은 고딕", sans-serif;
+        font-family:  'Poppins', "Malgun Gothic", "맑은 고딕", "sans-serif";
         font-weight: 400;
         color: red;
     }
