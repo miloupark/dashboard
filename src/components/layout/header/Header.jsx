@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 import Gnb from "./Gnb";
-import { Divider, Heading } from '@chakra-ui/react'
+import { Heading } from '@chakra-ui/react'
+import DividerCus from "../../commmon/DividerCus";
 
 
 // function Header () {}
@@ -16,7 +17,7 @@ const Header = () => {
       <HeaderStyle as="h1" className="logo">
         <Link to="/"><span>Binyard</span></Link>
       </HeaderStyle>
-      <Divider my={8} borderWidth="1px" background="var(--white)"/>
+      <DividerCus/>
       <Gnb />
     </HeaderWrapper>
   )

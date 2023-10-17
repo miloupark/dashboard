@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
         --primary-1: #8a87b3;
         --primary-2: #8D86D5;
         --primary-3: #908eae;
+        --secondary-grey-600: #A3AED0
         // --S_Light: red;
 
         --secondary: #fca311;
@@ -57,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
         background: url(2.jpg) no-repeat 0 0 !important;
         background-size: 100%;
         #root {
-            opacity: 0.5 !important;
+            opacity: 0.2 !important;
         }
     }
     
