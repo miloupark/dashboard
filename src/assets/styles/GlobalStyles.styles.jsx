@@ -55,10 +55,11 @@ const GlobalStyles = createGlobalStyle`
    
     /* 작업 시 뒤에 이미지 깔아두고 작업 */
     body {
-        background: url(2.jpg) no-repeat 0 0 !important;
-        background-size: 100%;
+        background: url(3.jpg) no-repeat 0 0 !important;
+        background-size: 30%;
+        filter: grayscale(100%);
         #root {
-            opacity: 0.2 !important;
+            opacity: 0.9 !important;
         }
     }
     

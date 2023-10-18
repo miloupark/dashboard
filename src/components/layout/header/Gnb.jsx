@@ -6,8 +6,6 @@ import { RiUser5Fill } from 'react-icons/ri';
 import { BsFillPinFill } from 'react-icons/bs';
 import { FaLink } from 'react-icons/fa';
 
-        
-
 const Gnb = () => {
   const location = useLocation();
 

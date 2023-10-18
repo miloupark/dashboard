@@ -1,11 +1,12 @@
 import React from 'react'
+import { Heading, VStack, Text } from '@chakra-ui/react'
 
 const Title = (props) => {
   return (
-    <div>
-      <h2>{props.title}</h2>
-      <p>{props.desc}</p>
-    </div>
+    <VStack spacing={4}>
+      <Heading as={'h2'}>{props.title}</Heading>
+      <Text variant={'txt164'}>{props.desc}</Text>
+    </VStack>
   );
 };
 

@@ -26,16 +26,18 @@ const Header = () => {
 // const 변수명 = styled.태그명``;
 const HeaderStyle = styled(Heading)`
   a {
+    display: block;
     text-transform: uppercase;
+    text-align: center;
     color: var(--white);
     font-size:26px;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    transition: color 0.3s ease-in-out;
     span { 
       font-weight: 700;
     }
     &:hover {
       color: var(--info-dark);
-      transition: color 0.3s ease-in-out;
     }
   }
   /* font-size: 32px;
@@ -50,7 +52,7 @@ const HeaderWrapper = styled.header`
   bottom: 0;
   width: 290px;
   padding: 48px 32px;
-  background-color: var(--black);
+  background: #111C44;
 `;
 
 
