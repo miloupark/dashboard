@@ -18,7 +18,7 @@ const Gnb = () => {
             </Link>
         </li>
         <li className={location.pathname === '/market'?'active':''}>
-          <Link to="/market">
+          <Link to="/marketplace">
             <RiUser5Fill size={24}/>MarketPlace
             </Link>
         </li>

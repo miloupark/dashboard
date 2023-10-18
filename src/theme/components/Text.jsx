@@ -184,40 +184,33 @@ const txt134 = defineStyle({
 const txt126 = defineStyle({
   fontSize: "12px",
   fontWeight: "600",
-  fontFamily: "Spoqa Han Sans Neo",
 });
 const txt125 = defineStyle({
   fontSize: "12px",
   fontWeight: "500",
-  fontFamily: "Spoqa Han Sans Neo",
   color: "text_Gray02",
 });
 const txt124 = defineStyle({
   fontSize: "12px",
   fontWeight: "400",
-  fontFamily: "Spoqa Han Sans Neo",
   color: "text_Gray02",
 });
 const txt115 = defineStyle({
   fontSize: "11px",
   fontWeight: "500",
-  fontFamily: "Spoqa Han Sans Neo",
 });
 const txt114 = defineStyle({
   fontSize: "11px",
   fontWeight: "400",
-  fontFamily: "Spoqa Han Sans Neo",
 });
 const txt113 = defineStyle({
   fontSize: "11px",
   fontWeight: "300",
-  fontFamily: "Spoqa Han Sans Neo",
 });
 const txt104 = defineStyle({
   fontSize: "10px",
   fontWeight: "400",
   letterSpacing: "-0.1px",
-  fontFamily: "Spoqa Han Sans Neo",
   lineHeight: "14px",
 });
 export const textTheme = defineStyleConfig({

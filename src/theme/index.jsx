@@ -38,10 +38,13 @@ const theme = extendTheme({
   colors: {
     text_default: "#3A3A3A",
     black: "#000000",
+    white: "#ffffff",
+    white_eee: "#eee",
     text_Gray02: "#000001",
     Secondary_V: "#A796FF",
     primary_V: "#6F36FF",
     primary_b: "#413FA0",
+    background_color: "#0B1437;"
   },
 });
 export default theme;
