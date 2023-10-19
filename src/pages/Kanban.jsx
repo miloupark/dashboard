@@ -1,9 +1,10 @@
 import React from 'react';
+import Layout from '../components/layout/Layout';
+
 const Kanban = () => {
   return (
-    <div>
-      <h2>Kanban</h2>
-    </div>
+    <Layout title="Kanban" pagename={'Kanban'}>
+    </Layout>
   );
 }
 

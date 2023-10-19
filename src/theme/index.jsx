@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { textTheme } from "./components/Text";
+import { tableTheme } from "./components/table";
 
 // import { containerTheme } from "./components/container";
 
@@ -7,6 +8,7 @@ const theme = extendTheme({
   components: {
     // Container: containerTheme,
     Text: textTheme,
+    Table: tableTheme,
   },
   styles: {
     global: {

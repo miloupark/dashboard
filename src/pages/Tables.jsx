@@ -1,27 +1,25 @@
 import React from 'react';
-import Title from '../components/title/Title';
-import History from '../components/title/History';
-import { Box, Stack } from '@chakra-ui/react';
 import { Grid, GridItem } from '@chakra-ui/react'
+import Layout from '../components/layout/Layout';
+import Development from '../components/tables/Development';
 
 const Tables = () => {
   return (
-    <Stack flexGrow={1}>
-    <Box pl="10px">
-      <History pagename="tables"/>
-      <Title title="Tables" desc="이 페이지는 tables 페이지입니다."/>
-    </Box>
-    <Grid
-      h='200px'
-      templateColumns='repeat(5, 1fr)'
-      gap={4}
-      >
-      <GridItem colSpan={2} bg='papayawhip' />
-      <GridItem colSpan={2} bg='papayawhip' />
-      <GridItem colSpan={2} bg='tomato' />
-      <GridItem colSpan={2} bg='tomato' />
-    </Grid>
-    </Stack>
+    <Layout title="Tables" pagename={'Tables'}>
+      <Grid 
+        h={"calc(100vh - 50px * 2 - 97px)"}
+        templateColumns='repeat(2, 1fr)'
+        templateRows='repeat(2, 1fr)'
+        gap={4}
+        >
+        <GridItem>
+        <Development/>
+        </GridItem>
+        <GridItem bg='papayawhip' />
+        <GridItem bg='tomato' />
+        <GridItem bg='tomato' />
+      </Grid>
+    </Layout>
   );
 }
 

@@ -3,11 +3,11 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import { Link } from 'react-router-dom';
 
 
-const History = ({pagename}) => {
+const History = ({ pagename }) => {
   // const { pagename } = props;
 
   return (
-    <Breadcrumb color="white_eee" fontSize="14px">
+    <Breadcrumb color="white_eee" fontSize="14px" fontWeight="500">
     <BreadcrumbItem>
       <BreadcrumbLink as={Link} to='/'>
         Home
@@ -22,4 +22,4 @@ const History = ({pagename}) => {
   );
 };
 
-export default History
+export default History;

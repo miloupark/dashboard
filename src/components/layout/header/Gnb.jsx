@@ -14,32 +14,32 @@ const Gnb = () => {
       <ul>
         <li className={location.pathname === '/'?'active':''}>
           <Link to="/">
-            <BiSolidDashboard size={24}/>Dashboard
+            <BiSolidDashboard size={24}/>
             </Link>
         </li>
-        <li className={location.pathname === '/market'?'active':''}>
+        <li className={location.pathname === '/marketplace'?'active':''}>
           <Link to="/marketplace">
-            <RiUser5Fill size={24}/>MarketPlace
+            <RiUser5Fill size={24}/>
             </Link>
         </li>
         <li className={location.pathname === '/tables'?'active':''}>
           <Link to="/tables">
-            <BsFillPinFill size={24}/>Tables
+            <BsFillPinFill size={24}/>
             </Link>
         </li>
         <li className={location.pathname === '/kanban'?'active':''}>
           <Link to="/kanban">
-            <FaLink size={24}/>kanban
+            <FaLink size={24}/>
             </Link>
         </li>
         <li className={location.pathname === '/profile'?'active':''}>
           <Link to="/profile">
-            <FaLink size={24}/>Profile
+            <FaLink size={24}/>
             </Link>
         </li>
         <li className={location.pathname === '/singin'?'active':''}>
           <Link to="/singin">
-            <FaLink size={24}/>Sign In
+            <FaLink size={24}/>
             </Link>
         </li>
       </ul>

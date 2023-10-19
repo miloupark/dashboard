@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "./components/layout/Layout";
 import { Reset } from "styled-reset";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages";
@@ -19,17 +18,14 @@ function App() {
       <CSSReset/>
       <Reset />
       <GlobalStyles/>
-      <Layout>
         <Routes>
           <Route path="/" element={<Home />}/>
-          {/* home = Dashboard */}
           <Route path="/marketplace" element={<MarketPlace/>}/>
           <Route path="/tables" element={<Tables/>}/>
           <Route path="/kanban" element={<Kanban/>}/>
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/signin" element={<Signin/>}/>
         </Routes>
-      </Layout>
     </ChakraProvider>
    );
 };
