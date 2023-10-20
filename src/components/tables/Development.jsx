@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, Heading, Image, HStack, Progress, Text} from '@chakra-ui/react'
+import { Card, CardHeader, CardBody, Heading, Image, HStack, Progress, Text, Flex} from '@chakra-ui/react'
 import {
   Table,
   Thead,
@@ -8,6 +8,7 @@ import {
   Td,
   TableCaption,
   TableContainer,
+  Box,
 } from '@chakra-ui/react'
 import apple from '../../assets/images/tables/apple.svg';
 import android from '../../assets/images/tables/android.svg';
@@ -88,11 +89,17 @@ const Development = () => {
              </Td>
              <Td>
               <HStack/>{item.number}
-             <Td>{item.percentage}
+             <Td>
+              <Flex>
+
+              <Box w="32px" textAlign={'right'}>
+              {item.percentage}
+              </Box>
              <Text variant="txt104" color= "#999">
                 %
              </Text>
              <Progress value={80}/>
+              </Flex>
              </Td>
            </Tr>
           ))}
