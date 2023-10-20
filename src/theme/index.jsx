@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import { textTheme } from "./components/Text";
 import { tableTheme } from "./components/table";
+import { progressTheme } from "./components/progress";
 
 // import { containerTheme } from "./components/container";
 
@@ -9,6 +10,7 @@ const theme = extendTheme({
     // Container: containerTheme,
     Text: textTheme,
     Table: tableTheme,
+    Progress: progressTheme,
   },
   styles: {
     global: {
@@ -46,7 +48,8 @@ const theme = extendTheme({
     Secondary_V: "#A796FF",
     primary_V: "#6F36FF",
     primary_b: "#413FA0",
-    background_color: "#0B1437;"
+    background_color: "#0B1437;",
+    primary: "#333",
   },
 });
 export default theme;

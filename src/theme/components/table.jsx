@@ -14,6 +14,11 @@ const baseStyle = definePartsStyle({
     borderCollapse: "collapse",
     width: "full",
   },
+  thead: {
+    position: 'sticky',
+    top: 0,
+    zIndex:'1',
+  },
   th: {
     fontFamily: "heading",
     fontWeight: "bold",
@@ -42,15 +47,30 @@ const variantSimple = definePartsStyle((props) => {
   const { colorScheme: c } = props
 
   return {
+    thead: {
+      bg: 'white',
+    },
     th: {
-      color: mode("gray.600", "gray.400")(props),
+      p: "10px",
+      color: mode("white", "white")(props),
       borderBottom: "1px",
       borderColor: mode(`${c}.100`, `${c}.700`)(props),
       ...numericStyles,
     },
+    tbody: {
+      tr: {
+        '&:first-child': {
+          td: {
+            pt:'20px',
+          },
+        },
+      },
+    },
     td: {
-      borderBottom: "1px",
-      borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      p: "10px",
+      borderBottom: 'none',
+      // borderColor: mode(`${c}.100`, `${c}.700`)(props),
+      // mode인데 두 가지 컬러가 있는 것은 컬러테마 적용되어있음
       ...numericStyles,
     },
     caption: {
@@ -87,6 +107,7 @@ const variantStripe = definePartsStyle((props) => {
     tbody: {
       tr: {
         "&:nth-of-type(odd)": {
+          // 홀수행을 선택하는 선택자 &:nth-of-type(odd)
           "th, td": {
             borderBottomWidth: "1px",
             borderColor: mode(`${c}.100`, `${c}.700`)(props),

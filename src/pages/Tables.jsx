@@ -12,12 +12,12 @@ const Tables = () => {
         templateRows='repeat(2, 1fr)'
         gap={4}
         >
-        <GridItem>
+        <GridItem bg='black'>
         <Development/>
         </GridItem>
         <GridItem bg='papayawhip' />
         <GridItem bg='tomato' />
-        <GridItem bg='tomato' />
+        <GridItem bg='black' />
       </Grid>
     </Layout>
   );
