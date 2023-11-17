@@ -259,8 +259,10 @@ const Development = () => {
                     ))}
                   </HStack>
                 </Td>
-                <Td>{item.number}</Td>
-                <Td>{item.percentage}%</Td>
+                <Td isNumeric>{item.number}</Td>
+                <Td>
+                  {item.percentage}%
+                </Td>
               </Tr>
             ))}
           </Tbody>
